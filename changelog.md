@@ -8,9 +8,11 @@ All notable changes to this project will be documented in this file.
 - Various user experience and performance improvements, and bug fixes
 ### Added
 - A mobile user landing screen, indicating the user should use the app on a desktop or laptop computer, not a mobile device (Addresses [#20](https://github.com/NYCPlanning/fast-tracker-tool/issues/20))
+  - Minor usability enhancements for tablet/mobile users may be considered in future updates.
 ### Fixed
 - Removed the ability of a user to resize the sidebar widget that contains the survey widget. Ability to *close* sidebar remains in place. Change does not impact the bottom sidebar that contains the data table
   - Fixes a bug in which click dragging the survey sidebar to resize, resulted in the sidebar getting "stuck" to the cursor (Addresses [#21](https://github.com/NYCPlanning/fast-tracker-tool/issues/21))
+- Added `Industrial Lots ID` value to Tax Lot pop-up. Had previously been missing. 
 ### Changed
 - Updated various dataset aliases within web map (impacts legend, pop-up, and web map details page.) Updated to enhance internal naming consistency and accuracy.
 - Updated all data sources within app to point to hosted views instead of pre-existing feature services (Addresses [#22](https://github.com/NYCPlanning/fast-tracker-tool/issues/22))
