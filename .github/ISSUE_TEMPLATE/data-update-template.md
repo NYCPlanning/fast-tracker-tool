@@ -18,46 +18,61 @@ App version:
     - [ ] All features have `variable_type` and `variable_id` columns
     - [ ] No major spatial anomalies (i.e. all features are buffered where relevant, points are excluded when joined to lots, etc.)
 - [ ] Publish
-  - [ ] [green_fast_track_bbls](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/ArcGIS/rest/services/green_fast_track_lots/FeatureServer)
+  - [ ] [GFT_Green_Fast_Track_Lots](https://dcp.maps.arcgis.com/home/item.html?id=08d1a0918aa04b5f9a3f7bde992a2dbd)
+    - Green_Fast_Track_Lots
   ##### Air Quality
-  - [ ] [sources__arterial_highways](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/sources__arterial_highways/FeatureServer)
-  - [ ] [arterial_highways_buffer_merge](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/arterial_highways_buffer_merge/FeatureServer)
-  - [ ] [title_v_permit_locations](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/title_v_permit_locations/FeatureServer)
-    - source__title_v_permit_lots
-    - source__title_v_permit_points
-  - [ ] [title_v_permits_buffer_merged](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/title_v_permits_buffer_merged/FeatureServer)
-  - [ ] [state_facility_permit_locations](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/state_facility_permit_locations/FeatureServer)
-    - source__state_facility_points
-    - source__state_facility_lots
-  - [ ] [state_facility_permits_buffer_merge](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/state_facility_permits_buffer_merge/FeatureServer)
-  - [ ] [vent_structure_lots](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/vent_structure_lots/FeatureServer)
-  - [ ] [vent_towers_buffered](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/vent_towers_buffered/FeatureServer)
-  - [ ] [industrial_sources_lots](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/industrial_sources_lots/FeatureServer)
-  - [ ] [industrial_sources_buffer](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/industrial_sources_buffer/FeatureServer)
-  - [ ] [cats_permits_locations](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/cats_permits_locations/FeatureServer)
-    - source__cats_permit_lots
-    - source__cats_permit_points
-  - [ ] [cats_permits_buffer_dissolve](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/cats_permits_buffer_dissolve/FeatureServer)
+  - [ ] [GFT_Arterial_Highways](https://dcp.maps.arcgis.com/home/item.html?id=e1256c00c4eb4869bcdae67bcf4c5c95)
+    - Arterial_Highways
+    - Arterial_Highways_Buffer
+  - [ ] [GFT_Title_V_Permits](https://dcp.maps.arcgis.com/home/item.html?id=d535fbd441574dd78a03ca7b2f368237)
+    - Title_V_Permits_Lots
+    - Title_V_Permits_Points
+    - Title_V_Permits_Buffer
+  - [ ] [GFT_State_Facility_Permits](https://dcp.maps.arcgis.com/home/item.html?id=682dddd5532f45f3bb4fea453c1d5024)
+    - State_Facility_Permits_Lots
+    - State_Facility_Permits_Points
+    - State_Facility_Permits_Buffer
+  - [ ] [GFT_Vent_Structures](https://dcp.maps.arcgis.com/home/item.html?id=0bd9e4f6d3a44ee4b414643122d595ce)
+    - Vent_Structures
+    - Vent_Structures_Buffer
+  - [ ] [GFT_Industrial_Sources](https://dcp.maps.arcgis.com/home/item.html?id=ccd743131fa14fbbb9d9ee7b810f8597)
+    - Industrial_Sources_Lots
+    - Industrial_Sources_Buffer
+  - [ ] [GFT_CATS_Permits](https://dcp.maps.arcgis.com/home/item.html?id=986e2fbcb7754393a1b5785d2d855936)
+    - CATS_Permits_Lots
+    - CATS_Permits_Points
+    - CATS_Permits_Buffer
   ##### Noise
-  - [ ] [airports](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/airports/FeatureServer)
-  - [ ] [elevated_railways_buffer_merged](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/elevated_railways_buffer_merged/FeatureServer)
-  ##### Natural Resources
-  - [ ] [sources__state_freshwater_wetlands_checkzones](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/sources__state_freshwater_wetlands_checkzones/FeatureServer)
-  - [ ] [gft_natural_resources](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/gft_natural_resources/FeatureServer)
-    - source__natural_resources_lines
-    - source__natural_resources_polys
-  ##### Historic Resources
-  - [ ] [gft_historic_resources_lots](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/gft_historic_resources_lots/FeatureServer)
-  - [ ] [gft_historic_resources_points](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/gft_historic_resources_points/FeatureServer)
-  - [ ] [gft_historic_districts](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/gft_historic_districts/FeatureServer)
-  - [ ] [gft_historic_resources_buffer](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/gft_historic_resources_buffer/FeatureServer)
-  - [ ] [sources__archaeological_areas](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/sources__archaeological_areas/FeatureServer)
-  ##### Shadows
-  - [ ] [sources__historic_resources_buffer_200ft](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/sources__historic_resources_buffer_200ft/FeatureServer)
-  - [ ] [gft_shadow_open_spaces_buffer](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/gft_shadow_open_spaces_buffer/FeatureServer)
-  - [ ] [gft_shadow_open_spaces_lots](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/gft_shadow_open_spaces_lots/FeatureServer)
-  - [ ] [sources__natural_resources_buffer](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/sources__natural_resources_buffer/FeatureServer)
-  - [ ] [gft_source_data_versions](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/gft_source_data_versions/FeatureServer)
+  - [ ] [GFT_Airport_Noise_Exposure](https://dcp.maps.arcgis.com/home/item.html?id=d9c78a257f1040fbbb949d0c7041629c)
+    - Airport_Noise_Exposure
+  - [ ] [GFT_Exposed_Railway](https://dcp.maps.arcgis.com/home/item.html?id=b2c4a16f63fb4dd3ac4e30efc7963e64)
+    - Exposed_Railway
+    - Exposed_Railway_Buffer
+  ##### Natural / Historic / Shadows
+  - [ ] [GFT_Wetland_Check_Zones](https://dcp.maps.arcgis.com/home/item.html?id=c79b1eb3413047f7a8e46fe4e3ba97a1)
+    - Wetland_Check_Zones
+  - [ ] [GFT_Natural_Resources_TEMP](https://dcp.maps.arcgis.com/home/item.html?id=872ebe0811644c2ca45f32bd4fb46a33) [2024-08-08 Note: this is a temporary service that will be replaced shortly]
+    - Natural_Resources_Poly
+    - Natural_Resources_Lines
+    - Natural_Resources_Shadow_Buffer
+  - [ ] [GFT_Historic_Resources](https://dcp.maps.arcgis.com/home/item.html?id=6d8f93de48cb4d4baabec65ee791731d)
+    - Historic_Resources_Lots
+    - Historic_Resources_Points
+    - Historic_Resources_Buffer
+    - Historic_Resources_Shadow_Buffer
+  - [ ] [GFT_Historic_Districts](https://dcp.maps.arcgis.com/home/item.html?id=301c830ceb5a4738acf81536a50cac78)
+    - Historic_Districts
+  - [ ] [GFT_Archaeological_Areas](https://dcp.maps.arcgis.com/home/item.html?id=4bee00516cc840efa831e09feb03fdfc)
+    - Archaeological_Areas
+  - [ ] [GFT_Open_Spaces](https://dcp.maps.arcgis.com/home/item.html?id=8c4073dba97d4d3d947be9a838ef915d)
+    - Open_Spaces
+    - Open_Spaces_Shadow_Buffer
+  - [ ] [GFT_Source_Data_Versions](https://dcp.maps.arcgis.com/home/item.html?id=af3af7cb490e4067adb073333c9640a3)
+    - Source_Data_Versions
+  ##### Application *(only requires updates as needed)*
+  - [ ] [GFT_User_Guide_Items](https://dcp.maps.arcgis.com/home/item.html?id=82f352439c194b4094a05b6a7e74234f)
+    - User_Guide_Items
+
 - [ ] Post-publish
   - [ ] Confirm data appears in pop-ups
   - [ ] Confirm data appears in map
