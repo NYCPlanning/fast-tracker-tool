@@ -11,6 +11,9 @@ See [App Changelog](changelog.md)
 ## Data Version
 Data version in the survey report associates the underlying Fast Tracker tax lot dataset to the corresponding MapPLUTO version. Use this number to validate reference dataset dates and versions which are listed in a supplementary table in ArcGIS Online and Open Data.
 
+## App Architecture Diagram
+![Architecture diagram](docs\application_diagram.svg)
+
 ## Links
 [Fast Tracker Application](https://fasttracker.planning.nyc.gov/)
 
