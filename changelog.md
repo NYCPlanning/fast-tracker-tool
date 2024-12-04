@@ -18,7 +18,6 @@ All notable changes to this project will be documented in this file.
   - (Addresses [#32](https://github.com/NYCPlanning/fast-tracker-tool/issues/32)) 
 ### Fixed
 - Report header version number bug (Addresses [#29](https://github.com/NYCPlanning/fast-tracker-tool/issues/29))
-  - 
 ### Changed
 
 ### Removed
