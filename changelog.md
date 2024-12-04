@@ -3,6 +3,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v0.4.0] - 2024-12-06
+- Updates to survey language
+- Report bug fix
+### Added
+- Updated helper text for the ```Will your proposal contain non-residential floor area?``` question in the survey.
+  - Text went from:
+
+    ```Non-residential floor area includes commercial, community facility, interior/structured parking, manufacturing, or other floor area that is not for mechanical/utility equipment or residential floor area.```
+
+    To:
+
+    ```Non-residential floor area includes commercial, community facility, manufacturing, or other floor area that is not for mechanical/utility equipment. Include structured parking as non-residential floor area when accessory to non-residential uses.```
+  - (Addresses [#32](https://github.com/NYCPlanning/fast-tracker-tool/issues/32)) 
+### Fixed
+- Report header version number bug (Addresses [#29](https://github.com/NYCPlanning/fast-tracker-tool/issues/29))
+  - 
+### Changed
+
+### Removed
+
 ## [v0.3.0] - 2024-08-07
 - Updates to underlying web service architecture
 - Various user experience and performance improvements, and bug fixes
