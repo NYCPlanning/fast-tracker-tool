@@ -3,6 +3,30 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.0] - 2024-12-17
+- Overhaul the report generation + delivery automation
+- Rebuild the zoning overlay symbology grouping mechanism
+- Tune popups
+- Add a dynamic data version value to the app
+### Added
+- A dynamic data version string to the information dropdown in the header of the main application screen AND a supplementary link to the application changelog (this page) in lieu of adding a dynamic _application_ version string. This second problem is much harder and is still unsolved.
+  - To help demystify what data is being used to hydrate the app and provide eligibility determinations, we wanted to dynamically provide a data version number somewhere within the app, without requiring a user to dig through supplementary datasets, or export their CSV
+  - The dynamic text we added queries the [Source Data Versions view](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/ArcGIS/rest/services/v_GFT_Source_Data_Versions/FeatureServer), and returns the value of the version of PLUTO used to built this version of the GFT tax lot dataset
+    (Addresses [#35](https://github.com/NYCPlanning/fast-tracker-tool/issues/35)
+### Fixed
+- The zoning overlay symbology to dynamically assign symbology based on the ruleset governing what is symbolized as high and low density residential, commercial or manufacturing, and so on. Addresses [#30](https://github.com/NYCPlanning/fast-tracker-tool/issues/30)
+  - The symbology previously relied on a mual grouping of zoning districts. This began to show errors as zoning districts changed, and as new zoning district groups were added to the dataset.
+- Survey feature service record deletion bug. The ArcGIS token was expiring, blocking record deletion from occurring when a new report was generated. Addresses [#33](https://github.com/NYCPlanning/fast-tracker-tool/issues/33)
+  - Work done to resolve [#28](https://github.com/NYCPlanning/fast-tracker-tool/issues/28) appears to have fixed this issue as well.
+  - The ArcGIS Power Automate token has a 14 day timeout if not used. Due to the work done to rebuild the report generation and delivery automation, and to adapt the scheduled keep-awake automation to interact with the ArcGIS connection specifically, it should now be much harder for the token to expire. 
+### Changed
+- The back report generation and delivery automation, and supplementary keep-awake and notify automation, both built with Power Automate
+  - Rebuilt the report generation/delivery automation to use the ArcGIS connection, and not the Survey123 connection as previously used. The ArcGIS connection token can still expire if left unused for around 14 days, but it will allegedly remain active if used within that time period
+  - Rebuilt the keep-awake and notify to interact with the ArcGIS connection daily to keep it active even if no reports are being generated, and to send the results of that action to the GIS Team to maintain proactive awareness of Power Automate connection health.
+  - Addresses [#28](https://github.com/NYCPlanning/fast-tracker-tool/issues/28)
+- E Designation lot pop ups to be a little less verbose, and provide information more relevant to the E Designation data itself. Addresses [#31](https://github.com/NYCPlanning/fast-tracker-tool/issues/31)
+### Removed
+
 ## [v0.4.0] - 2024-12-04
 - Updates to survey language
 - Report header data version bug fix
