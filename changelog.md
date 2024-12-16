@@ -24,7 +24,7 @@ All notable changes to this project will be documented in this file.
   - Rebuilt the report generation/delivery automation to use the ArcGIS connection, and not the Survey123 connection as previously used. The ArcGIS connection token can still expire if left unused for around 14 days, but it will allegedly remain active if used within that time period
   - Rebuilt the keep-awake and notify to interact with the ArcGIS connection daily to keep it active even if no reports are being generated, and to send the results of that action to the GIS Team to maintain proactive awareness of Power Automate connection health.
   - Addresses [#28](https://github.com/NYCPlanning/fast-tracker-tool/issues/28)
-- E Designation lot pop ups to be a little less verbose, and provide information more relevant to the E Designation data itself. Addresses [#31](https://github.com/NYCPlanning/fast-tracker-tool/issues/31)
+
 ### Removed
 
 ## [v0.4.0] - 2024-12-04
