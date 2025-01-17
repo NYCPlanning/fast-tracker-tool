@@ -6,7 +6,6 @@ All notable changes to this project will be documented in this file.
 ## [v1.0.0] - 2024-12-17
 - Overhaul the report generation + delivery automation
 - Rebuild the zoning overlay symbology grouping mechanism
-- Tune popups
 - Add a dynamic data version value to the app
 ### Added
 - A dynamic data version string to the information dropdown in the header of the main application screen AND a supplementary link to the application changelog (this page) in lieu of adding a dynamic _application_ version string. This second problem is much harder and is still unsolved.
