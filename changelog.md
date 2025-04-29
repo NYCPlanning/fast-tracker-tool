@@ -3,6 +3,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v0.4.1] - 2025-04-30
+- Fixes to survey text
+- Fixes to report text
+### Added
+
+### Fixed
+- Added missing section headers to output report, to more closely match the survey
+- Made typo and language corrections to output report, to more closely match the survey
+- Updated minor missing language in survey
+
+### Changed
+
+### Removed
+
 ## [v0.4.0] - 2024-12-04
 - Updates to survey language
 - Report header data version bug fix
