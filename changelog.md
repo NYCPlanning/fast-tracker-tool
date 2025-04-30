@@ -9,8 +9,8 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 ### Fixed
-- Added missing section headers to output report, to more closely match the survey
-- Made typo and language corrections to output report, to more closely match the survey
+- Added missing section headers to output report, to match the survey text
+- Made typo and language corrections to output report, to match the survey text
 - Updated minor missing language in survey
 
 ### Changed
