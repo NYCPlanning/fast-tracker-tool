@@ -1,33 +1,30 @@
-var index_3 = Split($feature.ZONEDIST, "")[2]; // Get the third character (index 2);
-Console($feature.ZONEDIST)
-Console(index_3)
-var value_3 = Number(index_3); // Convert to a number, or null if not numeric;
-Console(value_3)
+var test_zoning = "R4 Infill";
+var position = 2;
+var digits_array = Split("1234567890", "");
+var zoning_array = Split($feature.ZONEDIST, "");
+var first_char = zoning_array[0];
+var second_char = zoning_array[1];
+var third_char;
 
-// Check if it starts with M
-if (Left($feature.ZONEDIST, 1) == "M") {
-    return $feature.ZONEDIST + " = M District";
+if (
+  HasValue(zoning_array, position) && Includes(digits_array, zoning_array[2])
+) {
+  third_char = zoning_array[2];
 }
-// Check if it starts with C
-else if (Left($feature.ZONEDIST, 1) == "C") {
-    return $feature.ZONEDIST + " = C District";
-}
-// Check if it starts with R (Residential)
-else if (Left($feature.ZONEDIST, 1) == "R") {
-    // Check if the 3rd character is a number (e.g., R10)
-    if (Length($feature.ZONEDIST) > 2 && TypeOf(value_3) == 'Number') {
-        return $feature.ZONEDIST + " = High Density";
-    }
-    // If second character is between 1 and 4 (e.g., R1-R4)
-    else if (Mid($feature.ZONEDIST, 1, 1) >= "1" && Mid($feature.ZONEDIST, 1, 1) <= "4") {
-        return $feature.ZONEDIST + " = Low Density";
-    }
-    // If second character is between 5 and 9 (e.g., R5-R9)
-    else if (Mid($feature.ZONEDIST, 1, 1) >= "5" && Mid($feature.ZONEDIST, 1, 1) <= "9") {
-        return $feature.ZONEDIST + " = High Density";
-    }
-}
-// If none of the conditions are met, return Other
-else {
-    return $feature.ZONEDIST + " = Other";
+
+Console(`Character at index ${position}: ${third_char}`);
+Console(`Zoning as array: ${zoning_array}`);
+
+if (first_char == "M" || first_char == "C") {
+  return "C or M District";
+} else if (first_char == "R") {
+  if (Count(zoning_array) > 2 && !IsEmpty(third_char)) {
+    return "High Density";
+  } else if (second_char >= "1" && second_char <= "4") {
+    return "Low Density";
+  } else if (second_char >= "5" && second_char <= "9") {
+    return "High Density";
+  }
+} else {
+  return "Other";
 }
