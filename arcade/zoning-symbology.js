@@ -6,6 +6,7 @@ var first_char = zoning_array[0];
 var second_char = zoning_array[1];
 var third_char;
 
+// TODO: refactor me!
 if (
   HasValue(zoning_array, position) && Includes(digits_array, zoning_array[2])
 ) {
@@ -18,6 +19,7 @@ Console(`Zoning as array: ${zoning_array}`);
 if (first_char == "M" || first_char == "C") {
   return "C or M District";
 } else if (first_char == "R") {
+  // TODO: refactor me!
   if (Count(zoning_array) > 2 && !IsEmpty(third_char)) {
     return "High Density";
   } else if (second_char >= "1" && second_char <= "4") {
