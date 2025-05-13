@@ -2,7 +2,6 @@
 ## Fast Tracker Application
 
 All notable changes to this project will be documented in this file.
-
 ## [v1.0.0] - 2025-05-20
 - Overhaul the report generation + delivery automation
 - Rebuild the zoning overlay symbology grouping mechanism
@@ -25,7 +24,16 @@ All notable changes to this project will be documented in this file.
   - Rebuilt the keep-awake and notify to interact with the ArcGIS connection daily to keep it active even if no reports are being generated, and to send the results of that action to the GIS Team to maintain proactive awareness of Power Automate connection health.
   - Addresses [#28](https://github.com/NYCPlanning/fast-tracker-tool/issues/28)
 
-### Removed
+## [v0.4.1] - 2025-04-30
+- Fixes to survey text
+- Fixes to report text
+### Added
+
+### Fixed
+- Added missing section headers to output report, to match the survey text
+- Made typo and language corrections to output report, to match the survey text
+- Updated minor missing language in survey
+
 
 ## [v0.4.0] - 2024-12-04
 - Updates to survey language
