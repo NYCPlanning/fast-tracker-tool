@@ -1,32 +1,41 @@
-var test_zoning = "R4 Infill";
-var position = 2;
-var digits_array = Split("1234567890", "");
 var zoning_array = Split($feature.ZONEDIST, "");
+var digits_array = Split("1234567890", ""); // To test if a character is a digit
 var first_char = zoning_array[0];
 var second_char = zoning_array[1];
-var third_char;
+var zoning_category; // Initialize as null, assign later
 
-// TODO: refactor me!
-if (
-  HasValue(zoning_array, position) && Includes(digits_array, zoning_array[2])
-) {
-  third_char = zoning_array[2];
+Console(`Zoning as array: ${zoning_array}`);
+Console(`Zoning array length: ${Count(zoning_array)}`);
+
+// Assign third character to variable, if it exists
+if (Count(zoning_array) < 3) {
+  var third_char;
+} else {
+  var third_char = zoning_array[2];
 }
 
-Console(`Character at index ${position}: ${third_char}`);
-Console(`Zoning as array: ${zoning_array}`);
+Console(`First character (index 0): ${first_char}`);
+Console(`Second character (index 1): ${second_char}`);
+Console(`Third character (index 2): ${third_char}`);
 
-if (first_char == "M" || first_char == "C") {
-  return "C or M District";
+if (first_char == "C" || first_char == "M") {
+  zoning_category = "C or M District";
 } else if (first_char == "R") {
-  // TODO: refactor me!
-  if (Count(zoning_array) > 2 && !IsEmpty(third_char)) {
-    return "High Density";
+  // Test if 3rd character is a digit by comparing to the digits array.
+  // R10 and greater = High Density
+  if (Includes(digits_array, third_char)) {
+    zoning_category = "High Density";
+    // R1 - R4 = Low Density
   } else if (second_char >= "1" && second_char <= "4") {
-    return "Low Density";
+    zoning_category = "Low Density";
+    // R5 - R9 = High Density
   } else if (second_char >= "5" && second_char <= "9") {
-    return "High Density";
+    zoning_category = "High Density";
   }
 } else {
-  return "Other";
+  // Everything else = Other
+  zoning_category = "Other";
 }
+
+Console(`Category: ${zoning_category}`);
+return zoning_category;
