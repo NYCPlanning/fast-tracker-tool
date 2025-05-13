@@ -3,7 +3,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v1.0.0] - 2024-12-17
+## [v1.0.0] - 2025-05-20
 - Overhaul the report generation + delivery automation
 - Rebuild the zoning overlay symbology grouping mechanism
 - Add a dynamic data version value to the app
@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
   - The dynamic text we added queries the [Source Data Versions view](https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/ArcGIS/rest/services/v_GFT_Source_Data_Versions/FeatureServer), and returns the value of the version of PLUTO used to built this version of the GFT tax lot dataset
     (Addresses [#35](https://github.com/NYCPlanning/fast-tracker-tool/issues/35)
 ### Fixed
+- The data table within the Historic Resources section of the app was showing empty values for the Historic Resources column. This connection has been repaired. Addresses [#42](https://github.com/NYCPlanning/fast-tracker-tool/issues/42)
 - The zoning overlay symbology to dynamically assign symbology based on the ruleset governing what is symbolized as high and low density residential, commercial or manufacturing, and so on. Addresses [#30](https://github.com/NYCPlanning/fast-tracker-tool/issues/30)
   - The symbology previously relied on a manual grouping of zoning districts. This began to show errors as zoning districts changed, and as new zoning district groups were added to the dataset.
 - Survey feature service record deletion bug. The ArcGIS token was expiring, blocking record deletion from occurring when a new report was generated. Addresses [#33](https://github.com/NYCPlanning/fast-tracker-tool/issues/33)
