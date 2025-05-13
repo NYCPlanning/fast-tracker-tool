@@ -14,7 +14,7 @@ All notable changes to this project will be documented in this file.
     (Addresses [#35](https://github.com/NYCPlanning/fast-tracker-tool/issues/35)
 ### Fixed
 - The zoning overlay symbology to dynamically assign symbology based on the ruleset governing what is symbolized as high and low density residential, commercial or manufacturing, and so on. Addresses [#30](https://github.com/NYCPlanning/fast-tracker-tool/issues/30)
-  - The symbology previously relied on a mual grouping of zoning districts. This began to show errors as zoning districts changed, and as new zoning district groups were added to the dataset.
+  - The symbology previously relied on a manual grouping of zoning districts. This began to show errors as zoning districts changed, and as new zoning district groups were added to the dataset.
 - Survey feature service record deletion bug. The ArcGIS token was expiring, blocking record deletion from occurring when a new report was generated. Addresses [#33](https://github.com/NYCPlanning/fast-tracker-tool/issues/33)
   - Work done to resolve [#28](https://github.com/NYCPlanning/fast-tracker-tool/issues/28) appears to have fixed this issue as well.
   - The ArcGIS Power Automate token has a 14 day timeout if not used. Due to the work done to rebuild the report generation and delivery automation, and to adapt the scheduled keep-awake automation to interact with the ArcGIS connection specifically, it should now be much harder for the token to expire. 
