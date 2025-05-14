@@ -19,22 +19,22 @@ Console(`Second character (index 1): ${second_char}`);
 Console(`Third character (index 2): ${third_char}`);
 
 if (first_char == "C" || first_char == "M") {
-  zoning_category = "C or M District";
+  zoning_category = "C or M (including MX)";
 } else if (first_char == "R") {
   // Test if 3rd character is a digit by comparing to the digits array.
   // R10 and greater = High Density
   if (Includes(digits_array, third_char)) {
-    zoning_category = "High Density";
+    zoning_category = "R5 - R10";
     // R1 - R4 = Low Density
   } else if (second_char >= "1" && second_char <= "4") {
-    zoning_category = "Low Density";
+    zoning_category = "R1 - R4";
     // R5 - R9 = High Density
   } else if (second_char >= "5" && second_char <= "9") {
-    zoning_category = "High Density";
+    zoning_category = "R5 - R10";
   }
 } else {
   // Everything else = Other
-  zoning_category = "Other";
+  zoning_category = "Ineligible";
 }
 
 Console(`Category: ${zoning_category}`);
