@@ -2,7 +2,7 @@
 ## Fast Tracker Application
 
 All notable changes to this project will be documented in this file.
-## [v1.0.0] - 2025-05-20
+## [v1.0.0] - 2025-05-29
 - Overhaul the report generation + delivery automation
 - Rebuild the zoning overlay symbology grouping mechanism
 - Add a dynamic data version value to the app
