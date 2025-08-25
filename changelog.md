@@ -1,7 +1,24 @@
 # Changelog
 ## Fast Tracker Application
 
-All notable changes to this project will be documented in this file.
+All notable changes to the app, survey, and report aspects of this project will be documented in this file. Back end data engineering changes are tracked in a different [repository](https://github.com/NYCPlanning/data-engineering/), and may sometimes be referenced directly in this changelog.
+
+## [v1.1.0] - 2026-01-20
+Updates to handle new residence zoning districts, plus quality of life enhancements. 
+
+Accompanied by code changes in the NYC Planning Data Engineering repo to handle new R11 and R12 zoning districts. See data-engineering issue [#2032](https://github.com/NYCPlanning/data-engineering/issues/2032)
+
+### Added
+- Caveat text to front page of app, to better clarify that the app results are provisional and subject to additional review by applicant and lead agency (Addresses [#37](https://github.com/NYCPlanning/fast-tracker-tool/issues/37))
+- Survey and report question to handle new R11 or R12 residence districts as "Other". (Addresses [#52](https://github.com/NYCPlanning/fast-tracker-tool/issues/52) and partially [#51](https://github.com/NYCPlanning/fast-tracker-tool/issues/51))
+
+### Fixed
+### Changed
+- Map symbology logic to handle new R11 or R12 residence districts as "Other". (Addresses [#51](https://github.com/NYCPlanning/fast-tracker-tool/issues/51))
+- Underlying data pipeline code to process new R11 or R12 residence districts as "Other". (Addresses [#2032](https://github.com/NYCPlanning/data-engineering/issues/2032))
+- "Submit" button text at bottom of survey to read "Generate". (Addresses [#37](https://github.com/NYCPlanning/fast-tracker-tool/issues/37)) 
+
+
 ## [v1.0.1] - 2025-08-25
 Quality of life enhancements, derived from user feedback.
 
