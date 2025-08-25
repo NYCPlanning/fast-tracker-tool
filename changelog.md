@@ -2,6 +2,21 @@
 ## Fast Tracker Application
 
 All notable changes to this project will be documented in this file.
+## [v1.0.1] - 2025-08-25
+Quality of life enhancements, derived from user feedback.
+
+### Added
+- Additional explanatory text:
+  - Define CEQR and SEQRA acronyms within introductory text (Addresses [#45](https://github.com/NYCPlanning/fast-tracker-tool/issues/45))
+  - Explanation on how to complete a data selection during lot selection process (Adresses [#46](https://github.com/NYCPlanning/fast-tracker-tool/issues/46))
+### Fixed
+### Changed
+- Default zoom level of web map to be closer to NYC (Addresses [#47](https://github.com/NYCPlanning/fast-tracker-tool/issues/47))
+- Hyperlinks to point directly to new NYC Planning website (Addresses [#48](https://github.com/NYCPlanning/fast-tracker-tool/issues/48))
+  - New URL: [(https://www.nyc.gov/content/planning/pages/our-work/plans/citywide/green-fast-track-for-housing](https://www.nyc.gov/content/planning/pages/our-work/plans/citywide/green-fast-track-for-housing)
+  - Previously relied on a redirect from the old URL
+
+
 ## [v1.0.0] - 2025-05-29
 - Overhaul the report generation + delivery automation
 - Rebuild the zoning overlay symbology grouping mechanism
