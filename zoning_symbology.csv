@@ -1,0 +1,5 @@
+﻿category,symbol type,fill color,fill transparency,outline color,outline transparency,outline width,pattern,patter color,pattern transparency,pattern width,pattern rotation,pattern separation,pattern offset
+R1 - R4,Basic polygon,ffffbe,30,null,null,null,null,null,null,null,null,null,null
+R5 - R10,Basic polygon,ffd37f,31,null,null,null,null,null,null,null,null,null,null
+C or M (including MX),Basic polygon,f47ba8,32,null,null,null,null,null,null,null,null,null,null
+Other (Ineligible),Vector polygon,null,null,null,null,null,hatch fill,ad4200,20,2,45,5,0
