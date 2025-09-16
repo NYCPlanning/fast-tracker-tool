@@ -14,9 +14,8 @@ App version:
   - [ ] Get confirmation from DE
   - [ ] Unzip new GDB to staging location
   - [ ] Re-source Pro workspace to new GDB
-  - [ ] Visually check data:
-    - [ ] All features have `variable_type` and `variable_id` columns
-    - [ ] No major spatial anomalies (i.e. all features are buffered where relevant, points are excluded when joined to lots, etc.)
+  - [ ] Perform data QA (see process-specific documentation)
+
 - [ ] Publish
   - [ ] [GFT_Green_Fast_Track_Lots](https://dcp.maps.arcgis.com/home/item.html?id=08d1a0918aa04b5f9a3f7bde992a2dbd)
     - Green_Fast_Track_Lots
